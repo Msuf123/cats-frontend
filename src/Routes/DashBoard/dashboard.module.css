@@ -1,0 +1,37 @@
+.main{
+    background-color: var(--bk-color);
+    height: 100vh;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    
+}
+.heading{
+    color: white;
+    grid-column: 1 /3;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+.outerDiv{
+    display:flex;
+}
+    
+.filter{
+margin-left: 20px;
+
+}
+
+
+.catsdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+    margin-left: 3%;
+
+    
+    
+}

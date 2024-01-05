@@ -1,0 +1,29 @@
+.main{
+    background-color: var(--bk-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+.box{
+    display: flex;
+    transform: translate(0px,-90%);
+    flex-direction: column;
+    width: max-content;
+    margin: 50vh auto;
+    padding: 10px;
+    border: 2px solid white;
+    height: max(20vh,200px);
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.box input{
+    margin: 4px 0px;
+}
+.box button{
+    background-color: var(--button-color);
+    border: 0px solid black;
+    font-weight: 650;
+    padding: 4px 0px;
+    margin: 4px 0px;
+}

@@ -1,0 +1,45 @@
+.main{
+    width: max(20vw,200px);
+    
+    height: 290px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main img{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 0px;
+}
+.conjusted{
+    display: flex;
+    justify-content: space-around;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+}
+.name{
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.details button{
+    font-weight: 550;
+    width: max-content;
+    margin:5px auto;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    border: 2px solid rgb(136, 26, 139);
+}
+.details button:hover{
+    background-color:rgb(136, 26, 139) ;
+    color: white;
+}

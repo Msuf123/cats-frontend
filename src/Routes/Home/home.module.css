@@ -1,0 +1,75 @@
+:root{
+    --bk-color:rgb(34, 34, 34);
+    --button-color:rgb(198, 80, 253);
+}
+.main{
+    background-color: var(--bk-color);
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    
+}
+.main h1{
+    margin: 20px auto;
+    width: max-content;
+    color: aliceblue;
+}
+@property --gradeint-angle{
+    syntax: "<angle>";
+    initial-value: 4deg;
+    inherits: false;
+}
+.image{
+    /* grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    justify-self: center;
+    align-self: center;
+    width: min(40vw,500px);
+    border-radius: 35px;
+    padding: 1px 0px;
+    background-image: linear-gradient(45deg,violet,indigo,blue,green,yellow,orange,red);
+    background-size: 200% 200%;
+    animation-name: coloranimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    
+}
+.grid{
+    gap: 20px 10px;
+   
+    width: max-content;
+    display: grid;
+    margin:40vh auto;
+    transform: translate(0px,-50%);
+    grid-template-columns: max-content max-content;
+    grid-template-rows: max-content max-content;
+}
+@keyframes coloranimation {
+    from{
+        background-size: 150% 150%;
+    }
+    to{
+        background-size: 125% 125%;
+    }
+}
+.image img{
+    margin: 0px auto;
+    display: block;
+    aspect-ratio: 1;
+    width: 99.5% ;
+    border-radius: 35px;
+
+}
+.grid button{
+    background-color :var(--button-color);
+    border: 0px solid black;
+    font-weight: 650;
+    width: 40%;
+    margin: auto;
+    padding: 2px 0px;
+
+}
