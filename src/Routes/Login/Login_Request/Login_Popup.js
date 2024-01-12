@@ -3,10 +3,12 @@ import Login from '../Login'
 import style from './login.module.css'
 import { useState } from 'react'
 import post from '../post'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { isAuth, notAuth } from '../Login_Reducer/login_reducer'
 export default function Login_Popup(){
     const url=useSelector((state)=>state.url)
     const [email,setEmail]=useState('')
+    const dispatch=useDispatch()
     const [password,setPassword]=useState('')
     return(
         <div className={style.outer}>
@@ -18,7 +20,15 @@ export default function Login_Popup(){
             const prom=new Promise((resolve,reject)=>{
                 post(url,email,password,resolve,reject)
             })
-            prom.then((a)=>console.log(a)).catch((a)=>console.log(a))
+            prom.then((a)=>{ 
+                if(a.authenticate){
+                    
+                    dispatch(isAuth())
+                }
+                else{
+                    dispatch(notAuth())
+                }
+            }).catch((a)=>console.log(a))
             
         }}>Login</button>
         <span>Do not have a account? <Link to={"/sign-Up"}>Sign-Up.</Link></span>

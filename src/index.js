@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import url from './Common/URL/url';
 import { configureStore } from '@reduxjs/toolkit';
-const store=configureStore({reducer:{url}})
+import authicated from './Routes/Login/Login_Reducer/login_reducer'
+const store=configureStore({reducer:{url,authicated}})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

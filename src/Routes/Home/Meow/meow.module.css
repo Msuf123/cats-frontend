@@ -3,6 +3,9 @@
     height:max(50vh,200px) ;
     ;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: white;
     align-self: center;
     justify-self: center;

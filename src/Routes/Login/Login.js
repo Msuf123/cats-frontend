@@ -19,7 +19,19 @@ export default function Login(){
             <input placeholder="Enter username or email" value={email} onChange={(e)=>setEmail(e.target.value)}></input>
             <input placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}></input>
             <button onClick={()=>{
-              post(url,email,password)
+              
+              const prom=new Promise((resolve,reject)=>{
+                post(url,email,password,resolve,reject)
+            })
+            prom.then((a)=>{ 
+                if(a.authenticate){
+                    
+                   // dispatch(isAuth())
+                }
+                else{
+                   // dispatch(notAuth())
+                }
+            }).catch((a)=>console.log(a))
               
             }}>Login</button>
             <button onClick={()=>{
