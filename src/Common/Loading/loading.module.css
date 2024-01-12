@@ -1,0 +1,115 @@
+.main{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    position: relative;
+}
+ .main .sticks{
+    background-color: white;
+    width: 5px;
+    margin: 5px;
+    height: 15px;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.sticks:first-child{
+    background-color: white;
+    margin: 0px auto;
+}
+.sticks:nth-child(4){
+    background-color: white;
+    margin: 70px auto;
+}
+.sticks:nth-child(2){
+    transform: rotate(30deg);
+    position: absolute;
+    top: 0px;
+    right: 24px;
+}
+.sticks:nth-child(3){
+    transform: rotate(55deg);
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+.sticks:nth-child(5){
+    transform: rotate(90deg);
+    position: absolute;
+    top: 30px;
+    right: 1px;
+}
+.sticks:nth-child(6){
+    transform: rotate(110deg);
+    position: absolute;
+    top: 50px;
+    right: 3px;
+}
+.sticks:nth-child(7){
+    transform: rotate(135deg);
+    position: absolute;
+    top:65px;
+    right: 11px;
+}
+.sticks:nth-child(8){
+    transform: rotate(155deg);
+    position: absolute;
+    top:76px;
+    right: 26px;
+}
+
+.sticks:nth-child(9){
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 0px;
+    left: 24px;
+}
+.sticks:nth-child(10){
+    transform: rotate(-55deg);
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+.sticks:nth-child(11){
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 30px;
+    left: 1px;
+}
+.sticks:nth-child(12){
+    transform: rotate(-110deg);
+    position: absolute;
+    top: 50px;
+    left: 3px;
+}
+.sticks:nth-child(13){
+    transform: rotate(-135deg);
+    position: absolute;
+    top:65px;
+    left: 11px;
+}
+.sticks:nth-child(14){
+    transform: rotate(-155deg);
+    position: absolute;
+    top:76px;
+    left: 26px;
+}
+.typing{
+    position: absolute;
+    top: 108px;
+    left: 20px;
+    color: white;
+}
+@keyframes spin {
+    0%{
+            transform: rotate(0deg);
+            background-color: rgb(199, 46, 219);
+        
+    }
+    100%{
+          transform: rotate(360deg);
+          background-color: var(--button-color);
+    }
+}
