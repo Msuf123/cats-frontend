@@ -12,3 +12,8 @@
     border-radius: 5%;
     background-color: rgb(22, 22, 22);
 }
+.rel{
+    position: relative;
+    min-height: 200px;
+    
+}

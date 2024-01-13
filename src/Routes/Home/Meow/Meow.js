@@ -34,7 +34,7 @@ export default function Meow(){
            <p>Meow Meow </p>
            <p>Please buy me</p>
            </div>
-           <div>
+           <div className={style.rel}>
             {loading?<Loading></Loading>:<AllFeatures></AllFeatures>}
            
            </div>

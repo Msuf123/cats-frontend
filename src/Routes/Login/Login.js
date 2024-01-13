@@ -14,7 +14,7 @@ export default function Login(){
     //     })
     // },[])
     return(
-        <div className={style.main}>
+        <div className={style.main}> 
             <div className={style.box}>
             <input placeholder="Enter username or email" value={email} onChange={(e)=>setEmail(e.target.value)}></input>
             <input placeholder="Enter password" value={password} onChange={(e)=>setPassword(e.target.value)}></input>
